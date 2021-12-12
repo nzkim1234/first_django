@@ -19,6 +19,7 @@ from django.urls import path, include
 from first import views
 
 urlpatterns = [
+    path('', include('main.urls')),
     path('first/', include('first.urls')), 
     path('second/', include('second.urls')),
     path('third/', include('third.urls')),
